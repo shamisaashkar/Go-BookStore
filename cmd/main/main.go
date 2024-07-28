@@ -12,6 +12,6 @@ func main() {
 	r := mux.NewRouter()
 	routes.RegisterBookStoreRoute(r)
 	http.Handle("/", r)
-	log.Fatal(http.ListenAndServe("localhost:9010", r))
+	log.Fatal(http.ListenAndServe("localhost:9000", r))
 
 }
